@@ -8,7 +8,9 @@
     </div>
     <div class="col-md-4 col-sm-4">
       <div class="author pull-right">
-        <small>By: {{ _npmUser.name }}</small>
+        <small>By:
+          {{#if _npmUser.name}} {{ _npmUser.name }} / {{/if}} {{ author.name }}
+        </small>
       </div>
     </div>
   </div>
